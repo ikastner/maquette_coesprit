@@ -1,0 +1,79 @@
+/**
+ * Layout Convertigo-like : ion-grid / ion-row / ion-col
+ * Style LCNC inchangé — on ne touche qu’à la structure.
+ */
+
+.c8o-grid,
+.cv-grid {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+  --ion-grid-columns: 12;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.c8o-grid__row,
+.cv-grid__row {
+  align-items: flex-start;
+  margin: 0;
+}
+
+.profile-grid > .c8o-grid__row {
+  align-items: stretch;
+}
+
+/* Gutter horizontal 16px entre colonnes (desktop) */
+.c8o-grid > ion-row > ion-col:not(:last-child),
+.cv-grid > ion-row > ion-col:not(:last-child) {
+  padding-right: 8px !important;
+}
+
+.c8o-grid > ion-row > ion-col:not(:first-child),
+.cv-grid > ion-row > ion-col:not(:first-child) {
+  padding-left: 8px !important;
+}
+
+.c8o-grid__row--gap-sm > ion-col:not(:last-child) {
+  padding-right: 6px !important;
+}
+
+.c8o-grid__row--gap-sm > ion-col:not(:first-child) {
+  padding-left: 6px !important;
+}
+
+.c8o-grid__row--gap-lg > ion-col:not(:last-child) {
+  padding-right: 12px !important;
+}
+
+.c8o-grid__row--gap-lg > ion-col:not(:first-child) {
+  padding-left: 12px !important;
+}
+
+/* Stack vertical : écart entre lignes de cards */
+.c8o-grid__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .c8o-grid > ion-row > ion-col,
+  .cv-grid > ion-row > ion-col,
+  .c8o-grid__row--gap-sm > ion-col,
+  .c8o-grid__row--gap-lg > ion-col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .c8o-grid > ion-row > ion-col + ion-col,
+  .cv-grid > ion-row > ion-col + ion-col {
+    margin-top: var(--s-4);
+  }
+
+  .profile-grid > ion-row > ion-col + ion-col {
+    margin-top: 0;
+  }
+}

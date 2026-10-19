@@ -1,0 +1,115 @@
+/* Tokens issus de lib_components_ui (mobileNgxApp AcossColors + tokens Figma de left_sidebar). */
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/montserrat-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/roboto-latin-400-normal.woff2") format("woff2");
+}
+
+:root {
+  /* Primaire */
+  --c-primary: #1A428A;
+  --c-primary-hover: #13336B;
+  --c-primary-active: #2E5FB6;
+  --c-primary-deep: #122F62;
+  --c-primary-1: #EFF4FF;
+  --c-primary-2: #DBE7FF;
+  --c-primary-3: #B6CEFC;
+  --c-primary-4: #9EBBF1;
+  --c-primary-5: #6B93DA;
+
+  /* Secondaires */
+  --c-secondary: #008088;
+  --c-secondary-1: #E0FDFF;
+  --c-violet: #8B194D;
+  --c-violet-soft: #D5B5D7;
+  --c-subtitle: #AE78B2;
+
+  /* Texte et neutres */
+  --c-text: #212529;
+  --c-text-2: #495057;
+  --c-muted: #6C757D;
+  --c-white: #FFFFFF;
+  --c-grey-1: #F8F9FA;
+  --c-grey-2: #E6E9EC;
+  --c-grey-3: #CDD3D9;
+  --c-grey-4: #ADB5BD;
+  --c-page: #F4F7FB;
+  --c-border-card: #D1E3F8;
+  --c-border-soft: #DDE3F0;
+
+  /* États */
+  --c-success: #006B07;
+  --c-success-strong: #0D4210;
+  --c-success-1: #E2FFE4;
+  --c-success-2: #A9D4B2;
+  --c-danger: #D10310;
+  --c-danger-1: #FFEEEF;
+  --c-warning: #F16501;
+  --c-warning-text: #753100;
+  --c-warning-1: #FFF0E6;
+  --c-info: #006FB7;
+  --c-info-1: #E6F2FB;
+
+  /* Médailles du classement MVP */
+  --c-medal-gold: #E3B341;
+  --c-medal-gold-soft: #FFE8A3;
+  --c-medal-silver: #C3CCD6;
+  --c-medal-bronze: #C8875A;
+
+  /* Typographie */
+  --font-title: "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --fs-h1: 32px;
+  --fs-h2: 26px;
+  --fs-h3: 20px;
+  --fs-h4: 18px;
+  --fs-h5: 16px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-xs: 12px;
+
+  /* Rayons */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+
+  /* Espacements */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-8: 64px;
+
+  /* Ombres */
+  --sh-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --sh-blue: 4px 4px 6px -3px rgba(16, 79, 131, 0.16);
+  --sh-pop: 0 8px 24px rgba(15, 43, 91, 0.16);
+  --sh-drawer: -12px 0 32px rgba(15, 43, 91, 0.18);
+  --focus-ring: 0 0 0 3px rgba(26, 66, 138, 0.25);
+
+  /* Contrôles */
+  --control-h: 52px;
+  --control-h-sm: 40px;
+  --control-border: #6C757D;
+
+  /* Mise en page */
+  --sidebar-w: 264px;
+  --sidebar-w-collapsed: 76px;
+  --drawer-w: 520px;
+
+  --t-fast: 0.15s ease-in-out;
+  --t: 0.2s ease-in-out;
+}
